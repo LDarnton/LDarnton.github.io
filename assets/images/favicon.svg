@@ -4,14 +4,16 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="65px" height="65px" viewBox="0 0 65 65" enable-background="new 0 0 65 65" xml:space="preserve">
 <g>
-	<defs>
-		<rect id="SVGID_1_" x="-12.404" y="8.828" width="89.213" height="46.767"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	
-		<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="2.6492" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		23.222,47.462 2.541,47.462 32.5,17.537 32.5,47.466 62.459,17.537 41.778,17.534 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-12.327" y="9" width="89.654" height="47"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" stroke-width="4.9045" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			24.213,46.637 5.072,46.637 32.799,18.943 32.799,46.642 60.526,18.943 41.385,18.94 		"/>
+	</g>
 </g>
 </svg>
