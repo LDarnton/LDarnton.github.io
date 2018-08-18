@@ -57,7 +57,7 @@
 	//
 	// Portfolio box spacings //
 	//
-	&.no-spacing { 
+	&.no-spacing {
 		.portfolio-item { padding: 0; }
 	}
 	&.spacing-6 {
@@ -142,7 +142,7 @@
 // Portfolio Filter Styles //
 //
 .filter {
-	margin-bottom: 70px;
+	margin-bottom: 10px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -264,7 +264,7 @@
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest,
 .bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
 	.filter {
 		ul {
