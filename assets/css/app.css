@@ -486,6 +486,19 @@ a:hover {
   text-decoration: none;
 }
 
+em {
+  text-decoration:none;
+}
+
+.link:hover {
+  color: #00a4ed;
+  text-decoration: underline !important;
+}
+
+.link:link {
+    color: 00a4ed;
+}
+
 button {
   background: transparent;
   border: 0;
