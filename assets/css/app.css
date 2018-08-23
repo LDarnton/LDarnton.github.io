@@ -491,12 +491,12 @@ em {
 }
 
 .link:hover {
-  color: #00a4ed;
+  color: #00a4ed !important;
   text-decoration: underline !important;
 }
 
 .link:link {
-    color: 00a4ed;
+    color: #00a4ed !important;
 }
 
 button {
