@@ -483,7 +483,6 @@ a {
 
 a:hover {
   color: #646464;
-  text-decoration: underline !important;
 }
 
 em {
@@ -492,7 +491,6 @@ em {
 
 .link:hover {
   color: #00a4ed !important;
-  text-decoration: underline !important;
 }
 
 .link:link {
