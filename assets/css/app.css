@@ -628,7 +628,7 @@ a:focus, a:active, button:focus, button:active {
 
 
 .active {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
 }
 
 .collapsible:hover {
