@@ -612,7 +612,7 @@ a:focus, a:active, button:focus, button:active {
 }
 
 .collapsible {
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     color: white;
     cursor: pointer;
     padding-left: 25px;
