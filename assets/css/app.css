@@ -3699,6 +3699,23 @@ img {
   height: auto;
 }
 
+.card {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 0px;
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+    }
+
 img.img-circle-xs, img.img-circle-sm, img.img-circle-md, img.img-circle-lg, img.img-circle-xl {
   border-radius: 50%;
 }
