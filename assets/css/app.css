@@ -12,7 +12,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 .collapsible {
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     color: white;
     cursor: pointer;
     padding-left: 25px;
@@ -40,7 +40,7 @@
 
 
 .collapsible.active {
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border: 0px;
   padding-left: 25px;
   padding-right: 75px;
@@ -59,7 +59,7 @@
 }
 
 .collapsible:hover {
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .collapsible:hover::after {
@@ -74,7 +74,7 @@ color: #606060;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -224,7 +224,7 @@ color: #606060;
 }
 
 .bg-light {
-  background: #fafafa !important;
+  background: #f0f0f0 !important;
 }
 
 .bg-dark {
@@ -1010,7 +1010,7 @@ pre {
 }
 
 .badge-light {
-  background: #fafafa;
+  background: #f0f0f0;
 }
 
 .badge-secondary, .badge-warning, .badge-light {
@@ -1427,13 +1427,13 @@ pre {
 }
 
 .btn-light, a.btn-light {
-  background: #fafafa;
-  border-color: #fafafa;
+  background: #f0f0f0;
+  border-color: #f0f0f0;
   color: #141414;
 }
 
 .btn-light.disabled, a.btn-light.disabled {
-  background: #fafafa;
+  background: #f0f0f0;
   color: #141414;
 }
 
@@ -3316,7 +3316,7 @@ form.form-style-5 input, form.form-style-5 textarea, form.form-style-5 .form-con
 }
 
 form.form-style-5 input:focus, form.form-style-5 textarea:focus, form.form-style-5 .form-control:focus, .form-style-5 input:focus, .form-style-5 textarea:focus, .form-style-5 .form-control:focus {
-  background: #fafafa;
+  background: #f0f0f0;
 }
 
 .bg-grey form.form-style-5 input, .bg-grey form.form-style-5 textarea, .bg-grey form.form-style-5 .form-control, .bg-grey .form-style-5 input, .bg-grey .form-style-5 textarea, .bg-grey .form-style-5 .form-control, .bg-grey-lighter form.form-style-5 input, .bg-grey-lighter form.form-style-5 textarea, .bg-grey-lighter form.form-style-5 .form-control, .bg-grey-lighter .form-style-5 input, .bg-grey-lighter .form-style-5 textarea, .bg-grey-lighter .form-style-5 .form-control, .bg-grey-lightest form.form-style-5 input, .bg-grey-lightest form.form-style-5 textarea, .bg-grey-lightest form.form-style-5 .form-control, .bg-grey-lightest .form-style-5 input, .bg-grey-lightest .form-style-5 textarea, .bg-grey-lightest .form-style-5 .form-control {
@@ -5465,7 +5465,7 @@ ol li ul, ol li ol {
 }
 
 .table .thead-light th {
-  background: #fafafa;
+  background: #f0f0f0;
 }
 
 .table .table-active td, .table .table-active th {
@@ -5917,7 +5917,7 @@ i {
 
 .sidebar-box .tags li a {
   display: inline-block;
-  background: #fafafa;
+  background: #f0f0f0;
   padding: 5px 10px;
   font-size: 14px;
 }
@@ -7447,7 +7447,7 @@ button.mfp-close:hover {
 
 .filter ul li {
   display: inline-block;
-  background: #fafafa;
+  background: #f0f0f0;
   border-radius: 30px;
   margin-right: 10px;
   padding: 7px 15px;
@@ -7520,7 +7520,7 @@ button.mfp-close:hover {
 }
 
 .filter.filter-style-3 ul li.active {
-  background: #fafafa;
+  background: #f0f0f0;
 }
 
 .filter.filter-style-4 ul {
