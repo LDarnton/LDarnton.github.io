@@ -224,7 +224,7 @@ color: #606060;
 }
 
 .bg-light {
-  background: #f0f0f0 !important;
+  background: #fafafa !important;
 }
 
 .bg-dark {
@@ -1010,7 +1010,7 @@ pre {
 }
 
 .badge-light {
-  background: #f0f0f0;
+  background: #fafafa;
 }
 
 .badge-secondary, .badge-warning, .badge-light {
@@ -1427,13 +1427,13 @@ pre {
 }
 
 .btn-light, a.btn-light {
-  background: #f0f0f0;
-  border-color: #f0f0f0;
+  background: #fafafa;
+  border-color: #fafafa;
   color: #141414;
 }
 
 .btn-light.disabled, a.btn-light.disabled {
-  background: #f0f0f0;
+  background: #fafafa;
   color: #141414;
 }
 
@@ -3316,7 +3316,7 @@ form.form-style-5 input, form.form-style-5 textarea, form.form-style-5 .form-con
 }
 
 form.form-style-5 input:focus, form.form-style-5 textarea:focus, form.form-style-5 .form-control:focus, .form-style-5 input:focus, .form-style-5 textarea:focus, .form-style-5 .form-control:focus {
-  background: #f0f0f0;
+  background: #fafafa;
 }
 
 .bg-grey form.form-style-5 input, .bg-grey form.form-style-5 textarea, .bg-grey form.form-style-5 .form-control, .bg-grey .form-style-5 input, .bg-grey .form-style-5 textarea, .bg-grey .form-style-5 .form-control, .bg-grey-lighter form.form-style-5 input, .bg-grey-lighter form.form-style-5 textarea, .bg-grey-lighter form.form-style-5 .form-control, .bg-grey-lighter .form-style-5 input, .bg-grey-lighter .form-style-5 textarea, .bg-grey-lighter .form-style-5 .form-control, .bg-grey-lightest form.form-style-5 input, .bg-grey-lightest form.form-style-5 textarea, .bg-grey-lightest form.form-style-5 .form-control, .bg-grey-lightest .form-style-5 input, .bg-grey-lightest .form-style-5 textarea, .bg-grey-lightest .form-style-5 .form-control {
@@ -5465,7 +5465,7 @@ ol li ul, ol li ol {
 }
 
 .table .thead-light th {
-  background: #f0f0f0;
+  background: #fafafa;
 }
 
 .table .table-active td, .table .table-active th {
@@ -5917,7 +5917,7 @@ i {
 
 .sidebar-box .tags li a {
   display: inline-block;
-  background: #f0f0f0;
+  background: #fafafa;
   padding: 5px 10px;
   font-size: 14px;
 }
@@ -7447,7 +7447,7 @@ button.mfp-close:hover {
 
 .filter ul li {
   display: inline-block;
-  background: #f0f0f0;
+  background: #fafafa;
   border-radius: 30px;
   margin-right: 10px;
   padding: 7px 15px;
@@ -7520,7 +7520,7 @@ button.mfp-close:hover {
 }
 
 .filter.filter-style-3 ul li.active {
-  background: #f0f0f0;
+  background: #fafafa;
 }
 
 .filter.filter-style-4 ul {
