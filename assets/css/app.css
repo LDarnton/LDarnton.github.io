@@ -12,7 +12,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 .collapsible {
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     color: white;
     cursor: pointer;
     padding-left: 25px;
@@ -40,7 +40,7 @@
 
 
 .collapsible.active {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border: 0px;
   padding-left: 25px;
   padding-right: 75px;
@@ -74,7 +74,7 @@ color: #000000;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
