@@ -13,7 +13,10 @@
 
 #HASH {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  text-align: right !important;
 }
 
 .collapsible {
@@ -5513,6 +5516,7 @@ h1, h2, h3, h5, h6 {
   letter-spacing: 0;
   color: #141414;
   font-weight: 700;
+  text-align: left;
 }
 
 h4 {
