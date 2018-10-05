@@ -11,6 +11,11 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
+#HASH {
+  display: flex;
+  justify-content: space-between;
+}
+
 .collapsible {
     background-color: #f0f0f0;
     color: white;
