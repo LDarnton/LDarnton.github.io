@@ -5516,7 +5516,10 @@ h1, h2, h3, h5, h6 {
   letter-spacing: 0;
   color: #141414;
   font-weight: 700;
-  text-align: left;
+}
+
+.align-left {
+  text-align: left !important;
 }
 
 h4 {
