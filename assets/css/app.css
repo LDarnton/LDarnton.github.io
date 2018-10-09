@@ -508,6 +508,14 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
   margin: 0 !important;
 }
 
+.padding-right-35 {
+  padding-right: 35px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
 .padding-10 {
   padding: 10px;
 }
