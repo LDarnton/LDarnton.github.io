@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,800,900");
 
 #HASH {
   display: flex;
@@ -240,7 +241,7 @@ color: #000000;
 }
 
 .font-family-primary {
-  font-family: "Heebo", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .font-family-playfair {
@@ -1182,7 +1183,7 @@ pre {
 
 .breadcrumb .breadcrumb-item {
   display: inline-block;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -1269,13 +1270,13 @@ pre {
 }
 
 .btn, .button, .text-btn, .text-btn-2, .text-btn-3 {
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .button-font-2 {
-  font: 400 15px "Heebo", sans-serif;
+  font: 400 15px "Raleway", sans-serif;
   letter-spacing: 0;
   text-transform: capitalize;
 }
@@ -3144,7 +3145,7 @@ hr {
   margin-bottom: 10px;
   padding: 0;
   color: #141414;
-  font: 300 15px "Heebo", sans-serif;
+  font: 300 15px "Raleway", sans-serif;
   letter-spacing: 0;
   text-transform: none;
   -webkit-transition: linear 0.1s;
@@ -3172,7 +3173,7 @@ textarea {
   margin-bottom: 10px;
   padding: 15px 20px;
   box-shadow: none;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "Raleway", sans-serif;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -4170,7 +4171,7 @@ ol li ul, ol li ol {
   position: relative;
   padding: 0;
   color: #141414;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   -webkit-transition: linear 0.1s;
@@ -4598,7 +4599,8 @@ ol li ul, ol li ol {
     background: #1e1e1e;
   }
   .navbar .dropdown-grey {
-    background: #f0f0f0;
+    background: rgba(243, 243, 243, 0.9) !important;
+/*  background: #f0f0f0; */
   }
   .navbar .dropdown-transparent {
     background: rgba(255, 255, 255, 0.9);
@@ -5515,7 +5517,7 @@ ol li ul, ol li ol {
 
 body {
   color: #646464;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "Raleway", sans-serif;
   letter-spacing: 0;
 }
 
@@ -5757,7 +5759,7 @@ i {
   background: #141414;
   padding: 10px 20px;
   color: #fff;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -7484,7 +7486,7 @@ button.mfp-close:hover {
   border-radius: 30px;
   margin-right: 10px;
   padding: 7px 15px;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
@@ -8761,7 +8763,7 @@ body.loaded:after {
 
 .prices-box .price span {
   display: block;
-  font: 300 14px "Heebo", sans-serif;
+  font: 300 14px "Raleway", sans-serif;
   color: #a0a0a0;
 }
 
@@ -8783,7 +8785,7 @@ body.loaded:after {
 
 .prices-box .price h1 span, .prices-box .price h2 span, .prices-box .price h3 span, .prices-box .price h4 span, .prices-box .price h5 span, .prices-box .price h6 span {
   display: inline-block;
-  font: 300 14px "Heebo", sans-serif;
+  font: 300 14px "Raleway", sans-serif;
   color: #a0a0a0;
 }
 
@@ -9075,7 +9077,7 @@ body.loaded:after {
   position: relative;
   padding: 0;
   color: #141414;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   -webkit-transition: linear 0.1s;
@@ -9658,7 +9660,7 @@ body.loaded:after {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9706,7 +9708,7 @@ body.loaded:after {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9973,7 +9975,7 @@ body.loaded:after {
   transform: translateY(-50%);
   text-align: right;
   color: #646464;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "Raleway", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9986,7 +9988,7 @@ body.loaded:after {
   transform: translateY(0);
   margin-left: 5px;
   text-align: left;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "Raleway", sans-serif;
   letter-spacing: 0;
   text-transform: none;
 }
