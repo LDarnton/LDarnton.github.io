@@ -15,7 +15,7 @@
 
 #HASH {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-direction: row;
   text-align: right !important;
