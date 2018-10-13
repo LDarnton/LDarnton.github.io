@@ -7,19 +7,9 @@
 	<g>
 		<g>
 			<g>
-				<g>
-					<g>
-						<defs>
-							<rect id="SVGID_1_" x="5.08" y="19.468" width="54.84" height="28.749"/>
-						</defs>
-						<clipPath id="SVGID_2_">
-							<use xlink:href="#SVGID_1_"  overflow="visible"/>
-						</clipPath>
-						
-							<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-							27.431,42.49 15.723,42.49 32.683,25.55 32.683,42.493 49.643,25.55 37.935,25.548 						"/>
-					</g>
-				</g>
+				
+					<polyline fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+					27.431,42.49 15.723,42.49 32.683,25.55 32.683,42.493 49.643,25.55 37.935,25.548 				"/>
 			</g>
 		</g>
 	</g>
