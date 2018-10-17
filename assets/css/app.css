@@ -21,6 +21,20 @@
   text-align: right !important;
 }
 
+.img45x45 {
+
+  width: 45px !important;
+  height: 45px !important;
+
+}
+
+.img60x60 {
+
+  width: 60px !important;
+  height: 60px !important;
+
+}
+
 .categorypill {
 
 border:1px;
