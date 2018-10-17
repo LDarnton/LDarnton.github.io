@@ -21,6 +21,13 @@
   text-align: right !important;
 }
 
+.flex-wrapper {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
 .img45x45 {
 
   width: 45px !important;
@@ -611,10 +618,12 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
 html, body {
   width: 100%;
   height: 100%;
+
 }
 
 body {
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 a {
