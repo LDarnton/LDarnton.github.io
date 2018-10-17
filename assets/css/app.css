@@ -30,10 +30,10 @@
 
 .greyscale {
 
-  -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    opacity: 0.15;
-    filter: alpha(opacity=15);
+  -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    opacity: 0.15 !important;
+    filter: alpha(opacity=15) !important;
 
 }
 
