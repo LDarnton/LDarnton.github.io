@@ -21,6 +21,25 @@
   text-align: right !important;
 }
 
+.categorypill {
+
+border:1px;
+border-radius: 200px;
+border-style:solid;
+border-color:#efefef;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
+
+}
+
+.paddingtop {
+
+padding-top: 10px;
+padding-left: 0px !important;
+
+}
+
 .collapsible {
     background-color: #f0f0f0;
     color: white;
@@ -343,6 +362,10 @@ color: #000000;
 
 .text-dark {
   color: #141414 !important;
+}
+
+.text-grey {
+  color: #efefef !important;
 }
 
 .text-decoration-overline {
@@ -2894,7 +2917,7 @@ a.btn-outline-dark.focus {
 }
 
 hr {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(238, 238, 238, 0.9) !important;
   height: 1px;
   border: 0;
   margin-right: 0;
