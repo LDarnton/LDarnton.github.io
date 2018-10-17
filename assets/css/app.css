@@ -28,6 +28,15 @@
 
 }
 
+.greyscale {
+
+  -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    opacity: 0.15;
+    filter: alpha(opacity=15);
+
+}
+
 .img60x60 {
 
   width: 60px !important;

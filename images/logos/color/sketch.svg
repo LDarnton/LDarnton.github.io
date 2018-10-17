@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="45px" height="45px" viewBox="0 0 45 45" enable-background="new 0 0 45 45" xml:space="preserve">
+<title>Group</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Sketch-Flat-Logo" transform="translate(-9.000000, -28.000000)">
+		<g id="Group" transform="translate(9.000000, 28.000000)">
+			<g id="Base">
+				<polygon id="Polygon" fill="#FFAE00" points="22.5,42.86 0,16.715 9.747,3.507 22.5,2.14 35.253,3.507 45,16.715 				"/>
+			</g>
+			<g id="Bottom-Back" transform="translate(0.000000, 160.000000)">
+				<polygon id="Polygon_1_" fill="#EC6C00" points="22.5,-117.141 0,-143.285 45,-143.285 				"/>
+			</g>
+			<g id="Bottom-Mid" transform="translate(100.000000, 160.000000)">
+				<polygon id="Polygon_2_" fill="#FFAE00" points="-77.5,-117.141 -90.891,-143.285 -64.109,-143.285 				"/>
+			</g>
+			<g id="Top-Mid" transform="translate(100.000000, 0.000000)">
+				<polygon id="Polygon_3_" fill="#FFEFB4" points="-77.5,2.14 -90.891,16.715 -64.109,16.715 				"/>
+			</g>
+			<g id="Top-Side-Left" transform="translate(0.000000, 15.000000)">
+				<polygon id="Polygon_4_" fill="#FFAE00" points="9.747,-11.493 4.737,-4.843 0,1.715 9.2,1.715 				"/>
+			</g>
+			
+				<g id="Top-Side-Right" transform="translate(440.500000, 87.500000) scale(-1, 1) translate(-440.500000, -87.500000) translate(387.000000, 15.000000)">
+				<polygon id="Polygon_5_" fill="#FFAE00" points="458.747,-11.493 453.737,-4.843 449,1.715 458.201,1.715 				"/>
+			</g>
+			<g id="Top-Left" transform="translate(100.000000, 0.000000)">
+				<polygon id="Polygon_6_" fill="#FED305" points="-90.253,3.507 -90.891,16.715 -77.5,2.14 				"/>
+			</g>
+			<g id="Top-Right" transform="translate(247.000000, 0.000000)">
+				<polygon id="Polygon_7_" fill="#FED305" points="-211.747,3.507 -211.109,16.715 -224.5,2.14 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
