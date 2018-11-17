@@ -88,6 +88,21 @@ padding-left: 0px !important;
     outline: none;
 }
 
+.greybackground {
+    background-color: #f0f0f0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    border: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
 .collapsible::after {
     font-family: "FontAwesome" !important;
     font-size: 20px;
