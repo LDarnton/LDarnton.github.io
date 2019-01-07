@@ -1,4 +1,4 @@
-/*------------------------------------------------
+Raleway/*------------------------------------------------
 *
 * Template name: Mono
 * Version      : 4.3
@@ -12,6 +12,21 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+@font-face{
+    font-family:'Proxima Nova Soft';
+    src:url(./assets/fonts/Proxima_3_0.woff2);
+    font-style:normal;
+    font-weight:400
+}
+
+@font-face{
+    font-family:'Proxima Nova Soft';
+    src:url(./assets/fonts/Proxima_2_0.woff2);
+    font-style:normal;
+    font-weight:700
+}
+
 
 #HASH {
   display: flex;
