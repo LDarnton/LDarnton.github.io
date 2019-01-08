@@ -1,4 +1,4 @@
-Raleway/*------------------------------------------------
+/*------------------------------------------------
 *
 * Template name: Mono
 * Version      : 4.3
@@ -321,7 +321,7 @@ color: #000000;
 }
 
 .font-family-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: "Proxima Nova Soft", sans-serif;
 }
 
 .font-family-roboto {
@@ -3239,7 +3239,7 @@ hr {
   margin-bottom: 10px;
   padding: 0;
   color: #141414;
-  font: 300 15px "Raleway", sans-serif;
+  font: 300 15px "Proxima Nova Soft", sans-serif;
   letter-spacing: 0;
   text-transform: none;
   -webkit-transition: linear 0.1s;
@@ -3267,7 +3267,7 @@ textarea {
   margin-bottom: 10px;
   padding: 15px 20px;
   box-shadow: none;
-  font: 300 16px "Raleway", sans-serif;
+  font: 300 16px "Proxima Nova Soft", sans-serif;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -5611,7 +5611,7 @@ ol li ul, ol li ol {
 
 body {
   color: #646464;
-  font: 300 16px "Raleway", sans-serif;
+  font: 300 16px "Proxima Nova Soft", sans-serif;
   letter-spacing: 0;
 }
 
@@ -5619,7 +5619,7 @@ h1, h2, h3, h5, h6 {
   margin: 0 0 10px;
   letter-spacing: 0;
   color: #141414;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .align-left {
