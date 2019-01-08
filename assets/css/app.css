@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
@@ -321,7 +322,7 @@ color: #000000;
 }
 
 .font-family-primary {
-  font-family: "Proxima Nova Soft", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .font-family-roboto {
@@ -3239,7 +3240,7 @@ hr {
   margin-bottom: 10px;
   padding: 0;
   color: #141414;
-  font: 300 15px "Proxima Nova Soft", sans-serif;
+  font: 300 15px "Varela Round", sans-serif;
   letter-spacing: 0;
   text-transform: none;
   -webkit-transition: linear 0.1s;
@@ -3267,7 +3268,7 @@ textarea {
   margin-bottom: 10px;
   padding: 15px 20px;
   box-shadow: none;
-  font: 300 16px "Proxima Nova Soft", sans-serif;
+  font: 300 16px "Varela Round", sans-serif;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -5611,7 +5612,7 @@ ol li ul, ol li ol {
 
 body {
   color: #646464;
-  font: 300 16px "Proxima Nova Soft", sans-serif;
+  font: 300 16px "Varela Round", sans-serif;
   letter-spacing: 0;
 }
 
@@ -5656,6 +5657,7 @@ h4 {
 h5 {
   font-size: 20px;
   line-height: 36px;
+  font-weight: 900 !important;
 }
 
 h6 {
