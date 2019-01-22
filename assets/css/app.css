@@ -9,25 +9,43 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
-@font-face{
-    font-family:'Proxima Nova Soft';
-    src:url(./assets/fonts/Proxima_3_0.woff2);
-    font-style:normal;
-    font-weight:400
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url(../fonts/gothamrnd-bold.eot);
+    src: url(../fonts/gothamrnd-bold.eot) format('embedded-opentype'),
+         url(../fonts/gothamrnd-bold.woff) format('woff'),
+         url(../fonts/gothamrnd-bold.ttf) format('truetype'),
+         url(../fonts/gothamrnd-bold.svg#GothamRoundedBold) format('svg');
 }
 
-@font-face{
-    font-family:'Proxima Nova Soft';
-    src:url(./assets/fonts/Proxima_2_0.woff2);
-    font-style:normal;
-    font-weight:700
+@font-face {
+    font-family: 'GothamRoundedBook';
+    src: url(../fonts/gothamrnd-book.eot);
+    src: url(../fonts/gothamrnd-book.eot) format('embedded-opentype'),
+         url(../fonts/gothamrnd-book.woff) format('woff'),
+         url(../fonts/gothamrnd-book.ttf) format('truetype'),
+         url(../fonts/gothamrnd-book.svg#GothamRoundedBook) format('svg');
 }
-
+@font-face {
+    font-family: 'GothamRoundedMedium';
+    src: url(../fonts/gothamrnd-medium.eot);
+    src: url(../fonts/gothamrnd-medium.eot) format('embedded-opentype'),
+         url(../fonts/gothamrnd-medium.woff) format('woff'),
+         url(../fonts/gothamrnd-medium.ttf) format('truetype'),
+         url(../fonts/gothamrnd-medium.svg#GothamRoundedMedium) format('svg');
+}
+@font-face {
+    font-family: 'GothamRoundedLight';
+    src: url(../fonts/gothamrnd-light.eot);
+    src: url(../fonts/gothamrnd-light.eot) format('embedded-opentype'),
+         url(../fonts/gothamrnd-light.woff) format('woff'),
+         url(../fonts/gothamrnd-light.ttf) format('truetype'),
+         url(../fonts/gothamrnd-light.svg#GothamRoundedLight) format('svg');
+}
 
 #HASH {
   display: flex;
@@ -322,7 +340,7 @@ color: #000000;
 }
 
 .font-family-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: "GothamRoundedBook", sans-serif;
 }
 
 .font-family-roboto {
@@ -3240,7 +3258,7 @@ hr {
   margin-bottom: 10px;
   padding: 0;
   color: #141414;
-  font: 300 15px "Raleway", sans-serif;
+  font: 300 15px "GothamRoundedBook", sans-serif;
   letter-spacing: 0;
   text-transform: none;
   -webkit-transition: linear 0.1s;
@@ -3268,7 +3286,7 @@ textarea {
   margin-bottom: 10px;
   padding: 15px 20px;
   box-shadow: none;
-  font: 300 16px "Raleway", sans-serif;
+  font: 300 16px "GothamRoundedBook", sans-serif;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -5612,11 +5630,12 @@ ol li ul, ol li ol {
 
 body {
   color: #646464;
-  font: 300 16px "Raleway", sans-serif;
+  font: 300 16px "GothamRoundedBook", sans-serif;
   letter-spacing: 0;
 }
 
 h1, h2, h3, h5, h6 {
+font: 300 16px "GothamRoundedBold", sans-serif;
   margin: 0 0 10px;
   letter-spacing: 0;
   color: #141414;
