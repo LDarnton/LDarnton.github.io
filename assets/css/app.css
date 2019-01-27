@@ -342,7 +342,17 @@ color: #000000;
 
 .font-family-primary {
   font-family: "GothamRoundedBook", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
+
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: subpixel-antialiased;
+text-rendering: optimizeLegibility;
 
 .font-family-roboto {
   font-family: "Roboto", sans-serif !important;
