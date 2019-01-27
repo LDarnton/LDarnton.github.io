@@ -5730,10 +5730,10 @@ p {
 }
 
 .heading-uppercase {
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
 }
 
 .uppercase {
