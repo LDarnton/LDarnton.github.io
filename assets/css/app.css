@@ -682,13 +682,13 @@ body {
 }
 
 a {
-  color: #141414;
+  color: #141414 !important;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
 }
 
 a:hover {
-  color: #646464;
+  color: #646464 !important;
 }
 
 em {
