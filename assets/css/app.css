@@ -4245,7 +4245,7 @@ ol li ul, ol li ol {
 .navbar {
   z-index: 995;
   background: #fff;
-  height: 80px;
+  height: 60px;
   padding: 0;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
@@ -4316,7 +4316,7 @@ ol li ul, ol li ol {
 
 .navbar .nav .nav-item .dropdown-menu {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: -30px;
   background: #fff;
   min-width: 220px;
@@ -4569,7 +4569,7 @@ ol li ul, ol li ol {
     margin-right: 0;
   }
   .navbar .nav .nav-item .nav-link {
-    line-height: 80px;
+    line-height: 60px;
   }
   .navbar .nav .nav-item.nav-dropdown .nav-link {
     padding-right: 13px;
@@ -4637,13 +4637,13 @@ ol li ul, ol li ol {
 
 @media (max-width: 992px) {
   .navbar .container, .navbar .container-fluid {
-    height: 80px;
+    height: 60px;
     -webkit-transition: ease-out 0.2s;
     transition: ease-out 0.2s;
   }
   .navbar .nav {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 20px;
     left: 20px;
     display: none;
@@ -4654,7 +4654,7 @@ ol li ul, ol li ol {
 
 .navbar .nav .backup {
   position: absolute;
-  top: 80px;
+  top: 60px;
   right: 20px;
   left: 20px;
   display: none;
@@ -5137,7 +5137,7 @@ ol li ul, ol li ol {
 }
 
 .navbar-placeholder-padding {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .navbar-absolute ~ .navbar-placeholder-padding,
@@ -5221,7 +5221,7 @@ ol li ul, ol li ol {
 @media (min-width: 992px) {
   .navbar .nav .nav-item.nav-megadropdown .mega-menu {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 20px;
     left: 20px;
     -webkit-transform: translateY(4px);
