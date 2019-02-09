@@ -1,121 +1,7 @@
 //
 // Blog Styles //
 //
-.home-blog-post-wrapper {
-	margin-bottom: -20px;
-	div[class^="col-"], div[class*=" col-"] {
-		margin-bottom: 20px;
-		.home-blog-post-img {
-			position: relative;
-			overflow: hidden;
-			a {
-				position: relative;
-				display: block;
-				&:before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					opacity: 0;
-					z-index: 1;
-					background: $color-white-01;
-					width: 100%;
-					height: 100%;
-					@include transition(ease-out 0.2s);
-				}
-			}
-			img {
-				width: 100%;
-				@include transition(ease-out 0.2s);
-			}
-			.home-blog-post-category {
-				position: absolute;
-				top: 30px;
-				left: 30px;
-				z-index: 1;
-				display: inline-block;
-				background: $bg-dark;
-				padding: 10px 20px;
-				color: $color-white;
-				font: 400 13px $font-primary;
-				letter-spacing: 1.5px;
-				text-transform: uppercase;
-			}
-			&:hover {
-				img {
-					@include transform(scale(1.02));
-				}
-				a {
-					&:before {
-						opacity: 1;
-					}
-				}
-			}
-		}
-		.home-blog-post-content {
-			padding: 30px;
-			h1, h2, h3, h4, h5, h6 {
-				margin-bottom: 5px;
-			}
-		}
-	}
-}
-
-
-//
-// Blog Page Styles //
-//
-// Blog Category box Styles //
-.blog-category-box {
-	.blog-category-img {
-		position: relative;
-		overflow: hidden;
-		a {
-			display: block;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 1;
-				opacity: 0;
-				background: $color-white-01;
-				width: 100%;
-				height: 100%;
-				@include transition(ease-out 0.2s);
-			}
-			img {
-				width: 100%;
-				@include transition(ease-out 0.2s);
-			}
-			.blog-category {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				@include transform(translate(-50%,-50%));
-				z-index: 2;
-				background: $color-white;
-				padding: 10px 20px;
-				h1, h2, h3, h4, h5, h6 {
-					display: inline-block;
-					margin: 0;
-				}
-			}
-			&:hover {
-				&:before {
-					opacity: 1;
-				}
-				img {
-					@include transform(scale(1.02));
-				}
-			}
-		}
-	}
-}
-
-//
 // Blog Sidebar Styles //
-//
 .sidebar-wrapper {
 	&[class^="col-xl"], &[class*=" col-xl"] {
 		@include breakpoint-less(xl) {
@@ -141,7 +27,7 @@
 
 .sidebar-box {
 	border: 1px solid $border-grey;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding: 30px;
 	&:last-child {
 		margin-bottom: 0;
@@ -222,8 +108,7 @@
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06,  .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.sidebar-box {
 		border-color: $color-white-02;
 		.list-category {
@@ -252,7 +137,7 @@
 .comment-box {
 	position: relative;
 	margin-bottom: 30px;
-	padding-left: 90px;
+	padding-left: 80px;
 	.comment-user-avatar {
 		position: absolute;
 		top: 0;
@@ -283,16 +168,10 @@
 }
 
 //
-// Blog Page Post Styles //
+// Blog Post Styles //
 //
-.blog-post-box-wrapper {
-	margin-bottom: -50px;
-	div[class^="col-"], div[class*=" col-"] {
-		margin-bottom: 50px;
-	}
-}
 .blog-post-box {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	.blog-post-img {
 		position: relative;
 		overflow: hidden;
@@ -344,6 +223,32 @@
 		}
 	}
 }
+
+.blog-small-thumbnail {
+	.blog-post-box {
+		.blog-post-content {
+			text-align: left;
+		}
+	}
+	@include breakpoint-above(lg) {
+		.blog-post-box {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+		    display: flex;
+			margin-bottom: 60px;
+			.blog-post-img {
+				width: 300px;
+				min-width: 300px;
+				margin: 0 30px 0 0;
+			}
+			.blog-post-content {
+				padding: 0;
+			}
+		}
+	}
+}
+
 .text-left {
 	.blog-post-content {
 		text-align: left;
@@ -357,28 +262,9 @@
 	}
 }
 
-.blog-small-thumbnail {
-	.blog-post-box {
-		.blog-post-content {
-			text-align: left;
-		}
-	}
-	@include breakpoint-above(lg) {
-		.blog-post-box {
-			margin-bottom: 60px;
-			.blog-post-img {
-				float: left;
-				width: 300px;
-				margin: 0 30px 0 0;
-			}
-			.blog-post-content {
-				overflow: hidden;
-				padding: 0;
-			}
-		}
-	}
-}
-
+//
+// Blog Masonry //
+//
 .blog-masonry {
 	margin: 0 -15px -50px;
 	.blog-post-box {

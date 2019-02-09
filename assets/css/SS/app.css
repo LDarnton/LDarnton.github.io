@@ -8,16 +8,110 @@
 -------------------------------------------------*/
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
+
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url('../fonts/gothamrnd-bold.eot');
+    src: url('../fonts/gothamrnd-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-bold.woff') format('woff'),
+         url('../fonts/gothamrnd-bold.ttf') format('truetype'),
+         url('../fonts/gothamrnd-bold.svg#GothamRoundedBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamRoundedBook';
+    src: url('../fonts/gothamrnd-book.eot');
+    src: url('../fonts/gothamrnd-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-book.woff') format('woff'),
+         url('../fonts/gothamrnd-book.ttf') format('truetype'),
+         url('../fonts/gothamrnd-book.svg#GothamRoundedBook') format('svg');
+}
+@font-face {
+    font-family: 'GothamRoundedMedium';
+    src: url('../fonts/gothamrnd-medium.eot');
+    src: url('../fonts/gothamrnd-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-medium.woff') format('woff'),
+         url('../fonts/gothamrnd-medium.ttf') format('truetype'),
+         url('../fonts/gothamrnd-medium.svg#GothamRoundedMedium') format('svg');
+}
+@font-face {
+    font-family: 'GothamRoundedLight';
+    src: url('../fonts/gothamrnd-light.eot');
+    src: url('../fonts/gothamrnd-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothamrnd-light.woff') format('woff'),
+         url('../fonts/gothamrnd-light.ttf') format('truetype'),
+         url('../fonts/gothamrnd-light.svg#GothamRoundedLight') format('svg');
+}
+
+#HASH {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: right !important;
+}
+
+.flex-wrapper {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.img45x45 {
+
+  width: 45px !important;
+  height: 45px !important;
+
+}
+
+.greyscale {
+
+  -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    opacity: 0.15 !important;
+    filter: alpha(opacity=15) !important;
+
+}
+
+.img60x60 {
+
+  width: 60px !important;
+  height: 60px !important;
+
+}
+
+.categorypill {
+
+border:1px;
+border-radius: 200px;
+border-style:solid;
+border-color:#efefef;
+padding: 0px;
+padding-left: 13px;
+padding-right: 13px;
+
+}
+
+.paddingtop {
+
+padding-top: 10px;
+padding-left: 0px !important;
+
+}
 
 .collapsible {
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     color: white;
     cursor: pointer;
-    padding-left: 25px;
+    padding-left: 35px;
     padding-right: 75px;
-    padding-top: 20px;
+    padding-top: 35px;
     padding-bottom: 0px;
     width: 100%;
     border: 0px;
@@ -29,22 +123,37 @@
     outline: none;
 }
 
+.greybackground {
+    background-color: #f0f0f0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    border: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
 .collapsible::after {
     font-family: "FontAwesome" !important;
     font-size: 20px;
     content: "\f067";
     float: right !important;
-    color: black;
-    transform: translate(200%,-275%);
+    color: #606060;
+    transform: translate(190%,-300%);
 }
 
 
 .collapsible.active {
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border: 0px;
-  padding-left: 25px;
+  padding-left: 35px;
   padding-right: 75px;
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -59,22 +168,22 @@
 }
 
 .collapsible:hover {
-  background-color: #fafafa;
+  background-color: #f0f0f0;
 }
 
 .collapsible:hover::after {
-color: #606060;
+color: #000000;
 }
 
 .content {
-  padding-left: 25px;
+  padding-left: 35px;
   padding-right: 75px;
   padding-top: 0px;
   padding-bottom: 0px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -124,7 +233,7 @@ color: #606060;
 }
 
 .bg-white-09 {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(238, 238, 238, 0.9) !important;
 }
 
 .bg-white-08 {
@@ -232,7 +341,15 @@ color: #606060;
 }
 
 .font-family-primary {
-  font-family: "Heebo", sans-serif;
+  font-family: "GothamRoundedBook", sans-serif;
+}
+
+.font-family-google {
+  font-family: "Google Sans", sans-serif !important;
+}
+
+.font-family-roboto {
+  font-family: "google sans", sans-serif !important;
 }
 
 .font-family-playfair {
@@ -329,6 +446,10 @@ color: #606060;
 
 .text-dark {
   color: #141414 !important;
+}
+
+.text-grey {
+  color: #efefef !important;
 }
 
 .text-decoration-overline {
@@ -500,6 +621,14 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
   margin: 0 !important;
 }
 
+.padding-right-35 {
+  padding-right: 35px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
 .padding-10 {
   padding: 10px;
 }
@@ -543,20 +672,35 @@ a.text-decoration-underline-overline:hover, button.text-decoration-underline-ove
 html, body {
   width: 100%;
   height: 100%;
+  speak: none !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering: optimizeLegibility !important;
 }
 
 body {
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 a {
-  color: #141414;
+  color: #141414 !important;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
 }
 
+.contact {
+  color: #bcbcbc !important;
+}
+
+.contact:hover {
+  color: #646464 !important;
+}
+
 a:hover {
-  color: #646464;
+  color: #646464 !important;
 }
 
 em {
@@ -1166,7 +1310,7 @@ pre {
 
 .breadcrumb .breadcrumb-item {
   display: inline-block;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -1253,15 +1397,19 @@ pre {
 }
 
 .btn, .button, .text-btn, .text-btn-2, .text-btn-3 {
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .button-font-2 {
-  font: 400 15px "Heebo", sans-serif;
+  font: 400 15px "google sans", sans-serif;
   letter-spacing: 0;
   text-transform: capitalize;
+}
+
+.grey-font-color {
+  color: #bcbcbc !important;
 }
 
 .btn {
@@ -2868,7 +3016,7 @@ a.btn-outline-dark.focus {
 }
 
 hr {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(238, 238, 238, 0.9) !important;
   height: 1px;
   border: 0;
   margin-right: 0;
@@ -3128,7 +3276,7 @@ hr {
   margin-bottom: 10px;
   padding: 0;
   color: #141414;
-  font: 300 15px "Heebo", sans-serif;
+  font: 300 15px "GothamRoundedBook", sans-serif;
   letter-spacing: 0;
   text-transform: none;
   -webkit-transition: linear 0.1s;
@@ -3156,7 +3304,7 @@ textarea {
   margin-bottom: 10px;
   padding: 15px 20px;
   box-shadow: none;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "GothamRoundedBook", sans-serif;
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
@@ -3704,6 +3852,7 @@ img {
   max-width: 100%;
   height: auto;
   border: 0px;
+  background: rgba(0, 0, 0, 0);
     }
     .card .img-top {
         display: none;
@@ -4095,7 +4244,7 @@ ol li ul, ol li ol {
 .navbar {
   z-index: 995;
   background: #fff;
-  height: 80px;
+  height: 60px;
   padding: 0;
   -webkit-transition: linear 0.1s;
   transition: linear 0.1s;
@@ -4153,7 +4302,7 @@ ol li ul, ol li ol {
   position: relative;
   padding: 0;
   color: #141414;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   -webkit-transition: linear 0.1s;
@@ -4166,7 +4315,7 @@ ol li ul, ol li ol {
 
 .navbar .nav .nav-item .dropdown-menu {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: -30px;
   background: #fff;
   min-width: 220px;
@@ -4396,7 +4545,7 @@ ol li ul, ol li ol {
   }
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-grey .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
-    background: #f5f5f5;
+    background: #f0f0f0;
   }
   .navbar .dropdown-transparent .nav-item.nav-dropdown .dropdown-menu,
   .navbar .dropdown-transparent .nav-item.nav-dropdown .dropdown-menu .sub-dropdown .sub-dropdown-menu {
@@ -4419,7 +4568,7 @@ ol li ul, ol li ol {
     margin-right: 0;
   }
   .navbar .nav .nav-item .nav-link {
-    line-height: 80px;
+    line-height: 60px;
   }
   .navbar .nav .nav-item.nav-dropdown .nav-link {
     padding-right: 13px;
@@ -4487,22 +4636,34 @@ ol li ul, ol li ol {
 
 @media (max-width: 992px) {
   .navbar .container, .navbar .container-fluid {
-    height: 80px;
+    height: 60px;
     -webkit-transition: ease-out 0.2s;
     transition: ease-out 0.2s;
   }
   .navbar .nav {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 20px;
     left: 20px;
     display: none;
     background: #fff;
-    -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
-    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
     padding: 15px 20px;
     text-align: left;
   }
+
+.navbar .nav .backup {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  left: 20px;
+  display: none;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
+  padding: 15px 20px;
+  text-align: left;
+}
+
   .navbar .nav .nav-item {
     margin: 0;
   }
@@ -4569,7 +4730,8 @@ ol li ul, ol li ol {
     background: #1e1e1e;
   }
   .navbar .dropdown-grey {
-    background: #f5f5f5;
+    background: rgba(243, 243, 243, 0.9) !important;
+/*  background: #f0f0f0; */
   }
   .navbar .dropdown-transparent {
     background: rgba(255, 255, 255, 0.9);
@@ -4974,7 +5136,7 @@ ol li ul, ol li ol {
 }
 
 .navbar-placeholder-padding {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .navbar-absolute ~ .navbar-placeholder-padding,
@@ -5058,7 +5220,7 @@ ol li ul, ol li ol {
 @media (min-width: 992px) {
   .navbar .nav .nav-item.nav-megadropdown .mega-menu {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 20px;
     left: 20px;
     -webkit-transform: translateY(4px);
@@ -5178,7 +5340,7 @@ ol li ul, ol li ol {
     top: 60px;
   }
   .navbar .nav.dropdown-grey .nav-megadropdown .mega-menu {
-    background: #f5f5f5;
+    background: #f0f0f0;
   }
   .navbar .nav.dropdown-dark .nav-megadropdown .mega-menu {
     background: #1e1e1e;
@@ -5486,15 +5648,20 @@ ol li ul, ol li ol {
 
 body {
   color: #646464;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "GothamRoundedBook", sans-serif;
   letter-spacing: 0;
 }
 
 h1, h2, h3, h5, h6 {
+font-family: 300 16px "GothamRoundedBold", sans-serif;
   margin: 0 0 10px;
   letter-spacing: 0;
   color: #141414;
-  font-weight: 700;
+  font-weight: 100;
+}
+
+.align-left {
+  text-align: left !important;
 }
 
 h4 {
@@ -5537,6 +5704,8 @@ h6 {
 p {
   margin: 0;
   line-height: 30px;
+  font-family: "google sans", sans-serif !important;
+  font-weight: 100 !important;
 }
 
 .lead {
@@ -5560,10 +5729,10 @@ p {
 }
 
 .heading-uppercase {
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
 }
 
 .uppercase {
@@ -5724,7 +5893,7 @@ i {
   background: #141414;
   padding: 10px 20px;
   color: #fff;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -7451,7 +7620,7 @@ button.mfp-close:hover {
   border-radius: 30px;
   margin-right: 10px;
   padding: 7px 15px;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
@@ -8728,7 +8897,7 @@ body.loaded:after {
 
 .prices-box .price span {
   display: block;
-  font: 300 14px "Heebo", sans-serif;
+  font: 300 14px "google sans", sans-serif;
   color: #a0a0a0;
 }
 
@@ -8750,7 +8919,7 @@ body.loaded:after {
 
 .prices-box .price h1 span, .prices-box .price h2 span, .prices-box .price h3 span, .prices-box .price h4 span, .prices-box .price h5 span, .prices-box .price h6 span {
   display: inline-block;
-  font: 300 14px "Heebo", sans-serif;
+  font: 300 14px "google sans", sans-serif;
   color: #a0a0a0;
 }
 
@@ -9042,7 +9211,7 @@ body.loaded:after {
   position: relative;
   padding: 0;
   color: #141414;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   -webkit-transition: linear 0.1s;
@@ -9625,7 +9794,7 @@ body.loaded:after {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9673,7 +9842,7 @@ body.loaded:after {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9940,7 +10109,7 @@ body.loaded:after {
   transform: translateY(-50%);
   text-align: right;
   color: #646464;
-  font: 400 13px "Heebo", sans-serif;
+  font: 400 13px "google sans", sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -9953,7 +10122,7 @@ body.loaded:after {
   transform: translateY(0);
   margin-left: 5px;
   text-align: left;
-  font: 300 16px "Heebo", sans-serif;
+  font: 300 16px "google sans", sans-serif;
   letter-spacing: 0;
   text-transform: none;
 }

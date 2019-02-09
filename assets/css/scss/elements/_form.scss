@@ -160,7 +160,8 @@ form.form-style-5, .form-style-5 {
 		}
 	}
 }
-.bg-grey, .bg-grey-lighter, .bg-grey-lightest {
+.bg-grey, .bg-grey-lighter, .bg-grey-lightest, 
+.bg-grey-gradient-top, .bg-grey-gradient-right, .bg-grey-gradient-bottom, .bg-grey-gradient-left {
 	form.form-style-5, .form-style-5 {
 		input, textarea, .form-control {
 			background: $color-white;
@@ -174,8 +175,7 @@ form.form-style-5, .form-style-5 {
 //
 // Forms on Dark background //
 //
-.bg-dark, .bg-dark-lighter, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06,  .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	input, textarea, .form-control {
 		background: transparent;
 		border-color: $color-white-02;

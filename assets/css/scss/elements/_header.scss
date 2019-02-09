@@ -4,7 +4,7 @@
 .header-top {
 	background: $bg-dark;
 	padding: 20px 0;
-	color: $color-white-05;
+	color: $color-white-06;
 	.row {
 		margin-bottom: -20px;
 		div[class^="col-"], div[class*=" col-"] {
@@ -31,7 +31,8 @@
 		}
 	}
 }
-.bg-white, .bg-grey, .bg-grey-lighter, .bg-grey-lightest {
+.bg-white, .bg-grey, .bg-grey-lighter, .bg-grey-lightest, 
+.bg-grey-gradient-top, .bg-grey-gradient-right, .bg-grey-gradient-bottom, .bg-grey-gradient-left {
 	.header-top, &.header-top {
 		color: $color-primary;
 		a {
@@ -51,11 +52,8 @@
 	background: $color-white;
 	height: 80px;
 	padding: 0;
-	@include transition(linear 0.1s);
+	@include transition(ease 0.3s);
 
-	.container-fluid {
-		padding: 0 30px;
-	}
 	.row {
 		width: 100%;
 		margin: 0;
@@ -399,7 +397,7 @@
 						display: block;
 						visibility: hidden;
 						opacity: 0;
-						@include box-shadow(0 2px 14px 0 rgba(0,0,0,0.09));
+						@include box-shadow(0 2px 24px 0 rgba(0,0,0,0.09));
 						margin: 0;
 						@include transition(linear 0.1s);
 						li {
@@ -422,7 +420,7 @@
 								display: block;
 								visibility: hidden;
 								opacity: 0;
-								@include box-shadow(0 2px 14px 0 rgba(0,0,0,0.07));
+								@include box-shadow(0 2px 24px 0 rgba(0,0,0,0.07));
 								@include transition(linear 0.1s);
 							}
 							&:hover {
@@ -488,7 +486,7 @@
 			left: 20px;
 			display: none;
 			background: $color-white;
-			@include box-shadow(0 2px 14px 0 rgba(0,0,0,0.09));
+			@include box-shadow(0 2px 24px 0 rgba(0,0,0,0.09));
 			padding: 15px 20px;
 			text-align: left;
 			.nav-item {
@@ -831,7 +829,7 @@
 
 .navbar-shrink {
 	height: 60px;
-	@include box-shadow(0 2px 14px 0 rgba(0,0,0,0.09));
+	@include box-shadow(0 2px 24px 0 rgba(0,0,0,0.09));
 
 	@include breakpoint-above(lg) {
 		.nav {
@@ -1090,7 +1088,7 @@
 						visibility: hidden;
 						opacity: 0;
 						background: $color-white;
-						@include box-shadow(0 2px 14px 0 rgba(0,0,0,0.09));
+						@include box-shadow(0 2px 24px 0 rgba(0,0,0,0.09));
 						padding: 30px;
 						@include transition(linear 0.1s);
 					}
@@ -1134,6 +1132,7 @@
 			.nav-megadropdown {
 				.mega-menu {
 					border-color: $color-white-02;
+					color: $color-white-06;
 					h1, h2, h3, h4, h5, h6 {
 						color: $color-white;
 					}

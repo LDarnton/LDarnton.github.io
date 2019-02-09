@@ -57,7 +57,7 @@
 	//
 	// Portfolio box spacings //
 	//
-	&.no-spacing {
+	&.no-spacing { 
 		.portfolio-item { padding: 0; }
 	}
 	&.spacing-6 {
@@ -142,7 +142,7 @@
 // Portfolio Filter Styles //
 //
 .filter {
-	margin-bottom: 10px;
+	margin-bottom: 70px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -264,8 +264,7 @@
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest,
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.filter {
 		ul {
 			li {
@@ -356,7 +355,7 @@
 			top: 0;
 			left: 0;
 			opacity: 0;
-			background: $color-black-07;
+			background: $color-black-06;
 			width: 100%;
 			height: 100%;
 			color: $color-white-07;
@@ -611,6 +610,75 @@
 						opacity: 1;
 					}
 				}
+			}
+		}
+	}
+}
+
+//
+// Hover Style 6 //
+//
+.hover-style-6 {
+	.portfolio-item {
+		.portfolio-box {
+			&:hover {
+				.portfolio-img {
+					img {
+						@include transform(scale(1));
+						@include filter(blur(0));
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// Portfolio - Infinite Scroll //
+//
+.infinite-scroll-status {
+	display: none;
+	margin-top: 30px;
+	text-align: center;
+	color: $color-primary;
+	.infinite-scroll-request {
+		span {
+			display: inline-block;
+			background: $color-black-09;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+			@include animation(infinite-load-wave 0.6s infinite ease-in-out);
+			&:nth-child(2) {
+			  @include animation-delay(0.1s);
+			}
+			&:nth-child(3) {
+			  @include animation-delay(0.2s);
+			}
+			&:nth-child(4) {
+			  @include animation-delay(0.3s);
+			}
+		}
+	}
+}
+
+@keyframes infinite-load-wave {
+	0% { margin-bottom: 0 }
+	50% { margin-bottom: 6px }
+	100% { margin-bottom: 0 }
+}
+
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
+.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
+	.infinite-scroll-status {
+		color: $color-white-07;
+		.infinite-scroll-request {
+			span {
+				background: $color-white;
 			}
 		}
 	}

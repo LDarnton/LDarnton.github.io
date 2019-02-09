@@ -10,7 +10,8 @@
 .hyperlink-7, 
 .hyperlink-8, 
 .hyperlink-9, 
-.hyperlink-10 {
+.hyperlink-10, 
+.hyperlink-11 {
 	color: $color-black-09;
 	&:hover, &:focus {
 		color: $color-black-09;
@@ -133,10 +134,27 @@
 		}
 	}
 }
+.hyperlink-11 {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		background: $color-black-01;
+		width: 0;
+		height: 6px;
+		@include transition(linear 0.1s);
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+}
 
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06,  .bg-black-07, .bg-black-08, .bg-black-09 {
-	.hyperlink-1, .hyperlink-2, .hyperlink-3, .hyperlink-4, .hyperlink-5, .hyperlink-6, .hyperlink-7, .hyperlink-8, .hyperlink-9, .hyperlink-10 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
+	.hyperlink-1, .hyperlink-2, .hyperlink-3, .hyperlink-4, .hyperlink-5, .hyperlink-6, .hyperlink-7, .hyperlink-8, .hyperlink-9, .hyperlink-10, .hyperlink-11 {
 		color: $color-white;
 		&:hover, &:focus {
 			color: $color-white;
@@ -153,6 +171,11 @@
 		}
 		&:after {
 			background: $color-white;
+		}
+	}
+	.hyperlink-11 {
+		&:before {
+			background: $color-white-03;
 		}
 	}
 }

@@ -46,11 +46,25 @@
 .bg-grey-lightest { background: $bg-grey-lightest !important; }
 
 //
+// Gradient Backgrounds //
+//
+.bg-grey-gradient-top { background-image: linear-gradient(to top, #E6E6E6, #f5f5f5); }
+.bg-grey-gradient-right { background-image: linear-gradient(to right, #E6E6E6, #f5f5f5); }
+.bg-grey-gradient-bottom { background-image: linear-gradient(to bottom, #E6E6E6, #f5f5f5); }
+.bg-grey-gradient-left { background-image: linear-gradient(to left, #E6E6E6, #f5f5f5); }
+
+//
 // Bootstrap - Background colors //
 //
 .bg-secondary { background: $button-grey-darker !important; @extend .bg-white-content; }
 .bg-light { background: $button-grey-lighter !important; @extend .bg-white-content; }
 .bg-dark { background: $bg-dark !important; @extend .bg-dark-content; }
+
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
+	.bg-white, div[class^='bg-white-0'], div[class*=' bg-white-0'] {
+		@extend .bg-white-content;
+	}
+}
 
 //
 // Font Families //
@@ -77,7 +91,19 @@
 .text-white-03 { color: $color-white-03; }
 .text-white-02 { color: $color-white-02; }
 .text-white-01 { color: $color-white-01; }
+h1,h2,h3,h4,h5,h6 {
+	&.text-white-09 { color: $color-white-09; }
+	&.text-white-08 { color: $color-white-08; }
+	&.text-white-07 { color: $color-white-07; }
+	&.text-white-06 { color: $color-white-06; }
+	&.text-white-05 { color: $color-white-05; }
+	&.text-white-04 { color: $color-white-04; }
+	&.text-white-03 { color: $color-white-03; }
+	&.text-white-02 { color: $color-white-02; }
+	&.text-white-01 { color: $color-white-01; }
+}
 
+.text-black { color: $color-black; }
 .text-black-09 { color: $color-black-09; }
 .text-black-08 { color: $color-black-08; }
 .text-black-07 { color: $color-black-07; }
@@ -87,6 +113,18 @@
 .text-black-03 { color: $color-black-03; }
 .text-black-02 { color: $color-black-02; }
 .text-black-01 { color: $color-black-01; }
+h1,h2,h3,h4,h5,h6 {
+	&.text-black { color: $color-black; }
+	&.text-black-09 { color: $color-black-09; }
+	&.text-black-08 { color: $color-black-08; }
+	&.text-black-07 { color: $color-black-07; }
+	&.text-black-06 { color: $color-black-06; }
+	&.text-black-05 { color: $color-black-05; }
+	&.text-black-04 { color: $color-black-04; }
+	&.text-black-03 { color: $color-black-03; }
+	&.text-black-02 { color: $color-black-02; }
+	&.text-black-01 { color: $color-black-01; }
+}
 
 .text-dark { color: $color-dark !important; }
 
@@ -135,8 +173,7 @@ a, button {
 .border-left { border-left-width: 1px; }
 .no-border { border: 0 !important; }
 
-.bg-dark, .bg-dark-lighter, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06,  .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.border-all, .border-y, .border-x, .border-top, .border-right, .border-bottom, .border-left {
 		border-color: $color-white-01 !important;
 	}
@@ -161,6 +198,9 @@ a, button {
 .margin-right-10 { margin-right: 10px !important; }
 .margin-right-20 { margin-right: 20px !important; }
 .margin-right-30 { margin-right: 30px !important; }
+.margin-left-10 { margin-left: 10px !important; }
+.margin-left-20 { margin-left: 20px !important; }
+.margin-left-30 { margin-left: 30px !important; }
 .margin-bottom-10 { margin-bottom: 10px !important; }
 .margin-bottom-20 { margin-bottom: 20px !important; }
 .margin-bottom-30 { margin-bottom: 30px !important; }
@@ -173,13 +213,13 @@ a, button {
 //
 // Spacing - Padding //
 //
-.padding-10 { padding: 10px; }
-.padding-20 { padding: 20px; }
-.padding-30 { padding: 30px; }
-.padding-40 { padding: 40px; }
-.padding-50 { padding: 50px; }
-.padding-60 { padding: 60px; }
-.padding-70 { padding: 70px; }
+.padding-10 { padding: 10px !important; }
+.padding-20 { padding: 20px !important; }
+.padding-30 { padding: 30px !important; }
+.padding-40 { padding: 40px !important; }
+.padding-50 { padding: 50px !important; }
+.padding-60 { padding: 60px !important; }
+.padding-70 { padding: 70px !important; }
 .no-padding { padding: 0 !important; }
 .no-padding-top { padding-top: 0 !important; }
 .no-padding-bottom { padding-bottom: 0 !important; }

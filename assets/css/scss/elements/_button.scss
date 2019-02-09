@@ -15,6 +15,11 @@
 	letter-spacing: 0;
 	text-transform: capitalize;
 }
+.button-font-3 {
+	font: 300 16px $font-primary;
+	letter-spacing: 0;
+	text-transform: capitalize;
+}
 
 //
 // Bootstrap Button //
@@ -36,11 +41,11 @@
 //
 // Bootstrap Button - Sizes //
 //
-.btn-xs { padding: 6px 10px; }
-.btn-sm { padding: 10px 20px; }
-.btn-md { padding: 14px 30px; }
-.btn-lg { padding: 16px 40px; }
-.btn-xl { padding: 20px 50px; }
+.btn-xs { padding: 8px 14px; }
+.btn-sm { padding: 10px 22px; }
+.btn-md { padding: 14px 34px; }
+.btn-lg { padding: 16px 42px; }
+.btn-xl { padding: 20px 56px; }
 
 //
 // Bootstrap Button - Styles //
@@ -397,21 +402,21 @@ a.btn-outline-dark {
 //
 // Template Button - Sizes //
 //
-.button-xs { padding: 6px 10px; }
-.button-sm { padding: 10px 20px; }
-.button-md { padding: 14px 30px; }
-.button-lg { padding: 16px 40px; }
-.button-xl { padding: 20px 50px; }
+.button-xs { padding: 8px 14px; }
+.button-sm { padding: 10px 22px; }
+.button-md { padding: 14px 34px; }
+.button-lg { padding: 16px 42px; }
+.button-xl { padding: 20px 54px; }
 .button-fullwidth { width: 100%; text-align: center; }
 
 //
 // Template Button - Radius //
 //
-.button-rounded {
-	border-radius: 50px;
-}
 .button-radius {
 	border-radius: 5px;
+}
+.button-rounded {
+	border-radius: 50px;
 }
 
 //
@@ -1049,6 +1054,114 @@ a.btn-outline-dark {
 }
 
 //
+// Template Button - Gradient //
+//
+.button-gradient-grey, a.button-gradient-grey {
+	opacity: 0.8;
+	background-image: linear-gradient(to right, #dcdcdc, #f0f0f0);
+	border: 0;
+	&:hover, &:focus {
+		opacity: 1;
+		background-image: linear-gradient(to right, #dcdcdc, #f0f0f0);
+		border: 0;
+		color: $color-dark;
+	}
+}
+.button-gradient-grey-2, a.button-gradient-grey-2 {
+	opacity: 1;
+	background-image: linear-gradient(to right, #dcdcdc, #f0f0f0);
+	border: 0;
+	&:hover, &:focus {
+		opacity: 0.8;
+		background-image: linear-gradient(to right, #dcdcdc, #f0f0f0);
+		border: 0;
+		color: $color-dark;
+	}
+}
+.button-gradient-dark, a.button-gradient-dark {
+	opacity: 0.9;
+	background-image: linear-gradient(to right, #141414, #404040);
+	border: 0;
+	color: $color-white;
+	&:hover, &:focus {
+		opacity: 1;
+		background-image: linear-gradient(to right, #141414, #404040);
+		border: 0;
+		color: $color-white;
+	}
+}
+.button-gradient-dark-2, a.button-gradient-dark-2 {
+	opacity: 1;
+	background-image: linear-gradient(to right, #141414, #404040);
+	border: 0;
+	color: $color-white;
+	&:hover, &:focus {
+		opacity: 0.9;
+		background-image: linear-gradient(to right, #141414, #404040);
+		border: 0;
+		color: $color-white;
+	}
+}
+
+//
+// Template Button - Grow //
+//
+.button-grow-dark, a.button-grow-dark, 
+.button-grow-white, a.button-grow-white {
+	overflow: visible;
+	z-index: 1;
+	border: 0 solid transparent;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		bottom: -5px;
+		left: -5px;
+		display: block;
+		z-index: -1;
+		@include transition(linear 0.1s);
+	}
+	&:hover, &:focus {
+		border-color: transparent;
+		&:before {
+			top: -7px;
+			right: -7px;
+			bottom: -7px;
+			left: -7px;
+		}
+	}
+	&.button-radius {
+		&:before { border-radius: 5px; }
+	}
+	&.button-rounded {
+		&:before { border-radius: 50px; }
+	}
+}
+.button-grow-dark, a.button-grow-dark {
+	background: $button-dark;
+	color: $color-white;
+	&:before {
+		background: $color-black-02;
+	}
+	&:hover, &:focus {
+		background: $button-dark;
+		color: $color-white;
+	}
+}
+.button-grow-white, a.button-grow-white {
+	background: $color-white;
+	color: $color-dark;
+	&:before {
+		background: $color-white-03;
+	}
+	&:hover, &:focus {
+		background: $color-white;
+		color: $color-dark;
+	}
+}
+
+//
 // Template Text Button //
 //
 .text-btn {
@@ -1080,8 +1193,7 @@ a.btn-outline-dark {
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.text-btn {
 		color: $color-white-07;
 		&:before {
@@ -1125,8 +1237,7 @@ a.btn-outline-dark {
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.text-btn-2 {
 		color: $color-white;
 		&:before, &:after {
@@ -1161,8 +1272,7 @@ a.btn-outline-dark {
 		}
 	}
 }
-.bg-dark, .bg-dark-lighter, .bg-dark-lightest, 
-.bg-black-01, .bg-black-02, .bg-black-03, .bg-black-04, .bg-black-05, .bg-black-06, .bg-black-07, .bg-black-08, .bg-black-09 {
+.bg-dark, .bg-dark-lighter, .bg-dark-lightest, div[class^='bg-black'], div[class*=' bg-black'] {
 	.text-btn-3 {
 		color: $color-white-07;
 		&:before {
@@ -1353,6 +1463,60 @@ a.btn-outline-dark {
 	background: transparent;
 	border-color: $color-white;
 	color: $color-white;
+	&:hover, &:focus {
+		background: $color-white;
+		color: $color-dark;
+	}
+}
+
+//
+// Template Circle Button - Grow //
+//
+.button-circle-grow-dark, a.button-circle-grow-dark, 
+.button-circle-grow-white, a.button-circle-grow-white {
+	position: relative;
+	overflow: visible;
+	z-index: 1;
+	border: 0 solid transparent;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -5px;
+		right: -5px;
+		bottom: -5px;
+		left: -5px;
+		display: block;
+		z-index: -1;
+		@include transition(linear 0.1s);
+		border-radius: 50%;
+	}
+	&:hover, &:focus {
+		border-color: transparent;
+		&:before {
+			top: -7px;
+			right: -7px;
+			bottom: -7px;
+			left: -7px;
+		}
+	}
+}
+.button-circle-grow-dark, a.button-circle-grow-dark {
+	background: $button-dark;
+	color: $color-white;
+	&:before {
+		background: $color-black-02;
+	}
+	&:hover, &:focus {
+		background: $button-dark;
+		color: $color-white;
+	}
+}
+.button-circle-grow-white, a.button-circle-grow-white {
+	background: $color-white;
+	color: $color-dark;
+	&:before {
+		background: $color-white-03;
+	}
 	&:hover, &:focus {
 		background: $color-white;
 		color: $color-dark;
