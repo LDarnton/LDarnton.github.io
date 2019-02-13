@@ -34,7 +34,7 @@
   align-items: baseline;
   justify-content: space-between;
   flex-direction: row;
-  text-align: right !important;
+  text-align: center !important;
 }
 
 .flex-wrapper {
@@ -914,6 +914,8 @@ a:focus, a:active, button:focus, button:active {
 .position-middle {
   position: relative;
   top: 50%;
+	left: auto;
+	right: auto;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0 auto;
@@ -3084,8 +3086,8 @@ hr {
 }
 
 .text-center hr {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .text-right hr {
@@ -5752,6 +5754,7 @@ h1 {
 h2 {
   font-size: 32px;
   line-height: 48px;
+	  text-align: center !important;
 }
 
 h3 {
@@ -7630,7 +7633,7 @@ button.mfp-close:hover {
 }
 
 .text-center .portfolio-item {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-right .portfolio-item {
@@ -9214,8 +9217,8 @@ body.loaded:after {
 }
 
 .section-title.text-center p {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .section-title.text-right p {
@@ -9227,8 +9230,8 @@ body.loaded:after {
 }
 
 .text-center .section-title p {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .text-right .section-title p {
