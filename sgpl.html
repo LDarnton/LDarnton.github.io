@@ -202,14 +202,16 @@
 										style: "https://tile.jawg.io/3be639f3-3553-4f28-8836-5c0c4f9396a8.json?access-token=YOOpn6s1XfQqqg8K8topNpv8s4CwNgBTJqzztCgiUGC1Uwtys6ubdUwzhPbYrN2p",
 										zoom: 12.5,
 										center: [-1.0801417000000183, 53.967070368],
-										interactive: false
+										interactive: false,
+										trackResize: true,
+										detectRetina: true
 
 								})
 								map.on('dataloading', () => {
 											window.dispatchEvent(new Event('resize'));
 								});
 								map.on("load", function () {
-								/* Image: An image is loaded and added to the map. */
+											window.dispatchEvent(new Event('resize'));
 								map.loadImage("./sgpl/assets/images/map-pin.png", function(error, image) {
 								if (error) throw error;
 								map.addImage("custom-marker", image);
