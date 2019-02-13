@@ -5739,16 +5739,15 @@ h1, h2, h3, h5, h6 {
   text-align: center !important;
 }
 
-h4 {
-  margin: 0 0 0px;
-  letter-spacing: 2;
-  color: #141414;
-  font-weight: 700;
-}
-
 h1 {
   font-size: 40px;
   line-height: 56px;
+}
+
+@media (max-width: 576px) {
+	h1 {
+	  font-size: 32px;
+	}
 }
 
 h2 {
@@ -5765,7 +5764,11 @@ h3 {
 h4 {
   font-size: 24px;
   line-height: 40px;
-}
+	  margin: 0 0 0px;
+	  letter-spacing: 2;
+	  color: #141414;
+	  font-weight: 700;
+	}
 
 h5 {
   font-size: 20px;
@@ -5782,6 +5785,12 @@ p {
   line-height: 30px;
   font-family: "Roboto Slab", sans-serif !important;
   font-size: 15px;
+}
+
+@media (max-width: 576px) {
+	p {
+  font-size: 12px;
+	}
 }
 
 .font-size-14 {
