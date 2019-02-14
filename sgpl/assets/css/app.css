@@ -5747,6 +5747,7 @@ h1 {
 @media (max-width: 576px) {
 	h1 {
 	  font-size: 24px;
+	  line-height: 40px;
 	}
 }
 
@@ -5790,6 +5791,7 @@ p {
 @media (max-width: 576px) {
 	p {
   font-size: 12px;
+  line-height: 24px;
 	}
 }
 
