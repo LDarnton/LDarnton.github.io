@@ -213,7 +213,7 @@ color: #000000;
   background: #44ab39 !important;
 }
 
-.bg-dark-green {
+.bg-dark-blue {
   background: #2C6D25 !important;
     background: rgba(23, 28, 44, 0.7) !important;
 }
@@ -8401,7 +8401,7 @@ body.loaded:after {
   z-index: 999;
   visibility: visible;
   opacity: 1;
-  background: #fff;
+  background: #44ab39;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -8508,7 +8508,7 @@ body.loaded:after {
   opacity: 0;
   width: 60px;
   height: 60px;
-  background: #44ab39;
+  background: #2C6D25;
   border-radius: 50%;
   -webkit-animation: loader-three-scaleSpan 1.2s infinite linear;
   animation: loader-three-scaleSpan 1.2s infinite linear;
