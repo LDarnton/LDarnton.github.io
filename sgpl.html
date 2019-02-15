@@ -69,7 +69,7 @@
 		<div class="section-fullscreen"  style='top: 0; left: 0;'>
 			<div class="bg-image" style="background-image: url(./sgpl/images/steven-green-property-letting-image-rent.jpg)">
 			<div class="bg-black-06">
-			<div class="owl-carousel owl-nav-overlay owl-dots-overlay" data-owl-nav="false" data-owl-items="1" data-owl-autoplay="false" data-owl-dots="1" data-owl-autoplayTimeout="5000" data-owl-autoplayHoverPause"true">
+			<div class="owl-carousel owl-nav-overlay owl-dots-overlay" data-owl-nav="false" data-owl-items="1" data-owl-autoplay="false" data-owl-dots="true" data-owl-autoplayTimeout="5000" data-owl-autoplayHoverPause="true" data-owl-loop="true" data-owl-responsive="true">
 				<!-- Slider box 1 -->
 				<div class="">
 						<div class="container text-center">
@@ -213,14 +213,34 @@
 											window.dispatchEvent(new Event('resize'));
 								});
 
+
+
+																window.Maximize = function()
+																{
+																window.innerWidth = screen.width;
+																window.innerHeight = screen.height;
+																window.screenX = 0;
+																window.screenY = 0;
+																alwaysLowered = false;
+																}
+
+																map.Maximize = function()
+																{
+																window.innerWidth = screen.width;
+																window.innerHeight = screen.height;
+																window.screenX = 0;
+																window.screenY = 0;
+																alwaysLowered = false;
+																}
+
 								window.onresize = function()
 								{
-								  setTimeout( function() { map.updateSize();}, 0);
+								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 0);
 								}
 
 								map.onresize = function()
 								{
-								  setTimeout( function() { map.updateSize();}, 0);
+								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 0);
 								}
 
 								map.on("load", function () {
