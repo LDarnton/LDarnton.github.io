@@ -203,6 +203,12 @@
 						<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
 						<script>
 
+						var screenPixelRatio = (window.outerWidth - 8) / window.innerWidth;
+						var isAtDefaultZoom = screenPixelRatio > 0.92 && screenPixelRatio <= 1.10;
+						var isAtMaxWidth = screen.availWidth - window.innerWidth === 0;
+
+						var isMaximizedAndDefaultZoom = isAtMaxWidth && isAtDefaultZoom;
+
 								var map = new mapboxgl.Map({
 										container: 'map',
 										style: "https://tile.jawg.io/3be639f3-3553-4f28-8836-5c0c4f9396a8.json?access-token=YOOpn6s1XfQqqg8K8topNpv8s4CwNgBTJqzztCgiUGC1Uwtys6ubdUwzhPbYrN2p",
@@ -217,14 +223,21 @@
 											window.dispatchEvent(new Event('resize'));
 								});
 
+								map.on('isMaximizedAndDefaultZoom', () => {
+											map.dispatchEvent(new Event('resize'));
+											window.dispatchEvent(new Event('resize'));
+											setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 150);
+											setTimeout( function() { window.updateSize(); setDisplayBoardSize();}, 150);
+								});
+
 								window.onresize = function()
 								{
-								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 0);
+								  setTimeout( function() { window.updateSize(); setDisplayBoardSize();}, 150);
 								}
 
 								map.onresize = function()
 								{
-								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 0);
+								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 150);
 								}
 
 								map.on("load", function () {
@@ -313,7 +326,6 @@
 
 
 						});
-
 
 
 						// When a click event occurs on a feature in the places layer, open a popup at the
