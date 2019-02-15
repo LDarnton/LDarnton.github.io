@@ -447,9 +447,10 @@ $(function() {
     var $defaults = {
       rewind: true,
       navText: ["<i class='ti-angle-left'></i>","<i class='ti-angle-right'></i>"],
-      autoHeight: true,
+      autoHeight: false,
       autoplayTimeout: 4000,
-      autoplayHoverPause: true
+      autoplayHoverPause: true,
+      autoWidth: false
     }
 
     var $options = {
@@ -488,6 +489,29 @@ $(function() {
       navContainer: $carousel.data("owl-navContainer"),
       dotsContainer: $carousel.data("owl-dotsContainer")
     }
+
+    function recalcCarouselWidth(carousel) {
+        var $stage = carousel.find('.owl-stage'),
+             stageW = $stage.width(),
+    	 $el = $('.owl-item'),
+    	 elW = 0;
+        $el.each(function() {
+            elW += $(this)[0].getBoundingClientRect().width;
+        });
+        if ( elW > stageW ) {
+    	 console.log('elW maggiore di stageW: ' +  elW + ' > ' + stageW);
+    	 $stage.width( Math.ceil( elW ) );
+        }
+    }
+    $(window).on('resize', function(e){
+        recalcCarouselWidth( $('.owl-carousel') );
+    }).resize();
+    $('.owl-carousel').on('refreshed.owl.carousel', function(event) {
+         recalcCarouselWidth( $('.owl-carousel') );
+    });
+    $('.owl-carousel').on('onResize.owl.carousel', function(event) {
+        recalcCarouselWidth( $('.owl-carousel') );
+    });
 
     var $responsive = {
       responsive: {
