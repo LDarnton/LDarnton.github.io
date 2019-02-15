@@ -212,27 +212,7 @@
 								map.on('dataloading', () => {
 											window.dispatchEvent(new Event('resize'));
 								});
-
-
-
-																window.Maximize = function()
-																{
-																window.innerWidth = screen.width;
-																window.innerHeight = screen.height;
-																window.screenX = 0;
-																window.screenY = 0;
-																alwaysLowered = false;
-																}
-
-																map.Maximize = function()
-																{
-																window.innerWidth = screen.width;
-																window.innerHeight = screen.height;
-																window.screenX = 0;
-																window.screenY = 0;
-																alwaysLowered = false;
-																}
-
+								
 								window.onresize = function()
 								{
 								  setTimeout( function() { map.updateSize(); setDisplayBoardSize();}, 0);
