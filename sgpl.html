@@ -203,6 +203,21 @@
 						<script src="sgpl/assets/js/flickity.pkgd.js"></script>
 
 						<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+<script>
+
+function resize()
+{
+    var heights = window.innerHeight;
+    document.getElementById("left").style.height = heights + "px";
+}
+resize();
+window.onresize = function() {
+    resize();
+};
+
+window.onresize(); // called to initially set the height.
+</script>
+
 						<script>
 
 								var map = new mapboxgl.Map({
