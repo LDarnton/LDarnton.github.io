@@ -9258,7 +9258,7 @@ body.loaded:after {
 
 .section-fullscreen {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
 }
 
 .section-fullscreen .bg-black-01, .section-fullscreen .bg-black-02, .section-fullscreen .bg-black-03, .section-fullscreen .bg-black-04, .section-fullscreen .bg-black-05, .section-fullscreen .bg-black-06, .section-fullscreen .bg-black-07, .section-fullscreen .bg-black-08, .section-fullscreen .bg-black-09,
