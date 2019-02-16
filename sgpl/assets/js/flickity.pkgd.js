@@ -87,6 +87,19 @@ function jQueryBridget( namespace, PluginClass, $ ) {
     return this;
   };
 
+  $el.on('dragStart.flickity', () => $el.find('.slide').css('pointer-events', 'none'));
+  $el.on('dragEnd.flickity', () => $el.find('.slide').css('pointer-events', 'all'));
+
+  var $carousel = $('.carousel').flickity();
+var flickity = $carousel.data('flickity');
+
+$carousel.on( 'click', 'a', function( event ) {
+  if ( event.currentTarget != flickity.selectedElement ) {
+    event.preventDefault();
+  }
+});
+
+
   // $().plugin('methodName')
   function methodCall( $elems, methodName, args ) {
     var returnValue;
