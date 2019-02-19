@@ -329,9 +329,29 @@ h1, h2, h3, h5, h6 {
   font-weight: normal !important;
 }
 
+h5 {
+line-height: 19px !important;
+}
+
+h5 {
+line-height: 23px !important;
+}
+
+h3 {
+line-height: 31px !important;
+}
+
+h2 {
+line-height: 35px !important;
+}
+
+h1 {
+line-height: 43px !important;
+}
+
 h4 {
   font-size: 24px !important;
-  line-height: 40px !important;
+  line-height: 27px !important;
 }
 
 .align-left {
