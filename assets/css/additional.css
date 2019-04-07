@@ -55,7 +55,6 @@
   align-items: baseline;
   justify-content: space-between;
   flex-direction: row;
-  text-align: right !important;
 }
 
 .flex-wrapper {
