@@ -318,7 +318,7 @@ popup.setLngLat(coordinates)
 						</script>
 						<script type="text/javascript">
 							$(".project-wrapper").on("click", ".project-entry", function () {
-								$(".project-gallery").html($(this).find(".showcase-slideshow").html());
+								$(".project-gallery")($(this).find(".showcase-slideshow")());
 							});
 						</script>
 					</body>
