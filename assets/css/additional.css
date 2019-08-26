@@ -58,6 +58,13 @@
     top: -100;
   }
 
+  .preloader-2 div {
+    position: relative !important;
+    width: 50px !important;
+    height: 50px !important;
+    content: url("../images/spinner.gif") !important;
+  }
+
 .underlineload:hover:after {
 width:100%;
 right: 0;
